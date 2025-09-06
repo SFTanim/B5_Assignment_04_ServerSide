@@ -4,7 +4,7 @@ import { borrowRoutes } from "./app/controllers/borrow.controllers";
 import cors from "cors";
 
 const app: Application = express();
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://assignment-4front-end.vercel.app" }));
 app.use(express.json());
 
 app.use("/books", bookRoutes);
